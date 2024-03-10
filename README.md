@@ -2,26 +2,26 @@
 
 Demonstração prática do funcionamento ao nível do hardware: **ciclos de instrução**, **registos** e **manipulação de memória**.
 
-Este repositório tem como objetivo mostrar, de forma clara e prática, como o processador executa instruções, como utiliza os registos e como acede à memória.
+Este repositório tem como objetivo mostrar, de forma simples, como um CPU executa instruções, usa registos e acede à memória.
 
 ## Objetivos de Aprendizagem
 
 - Compreender o ciclo **Fetch → Decode → Execute**
-- Manipular registos de uso geral e especiais (RAX, RBX, RCX, RDX, RSI, RDI, RSP, RBP, etc.)
-- Realizar operações de **load/store** em memória
-- Observar o comportamento da **stack**
-- Relacionar código de alto nível com o que acontece realmente no hardware
+- Manipulação de registos de uso geral e especiais (RAX, RBX, RCX, RDX, RSI, RDI, RSP, RBP, etc.)
+- Executar operações de **load/store** em memória
+- Ver o comportamento da **stack**
+- Fazer a relação entre o código com o que acontece realmente no hardware
 
 ## Estrutura do Repositório
 
 | Pasta / Ficheiro | Conteúdo |
 |------------------|----------|
-| `docs/` | Explicações teóricas detalhadas |
+| `docs/` | Explicações teóricas |
 | `examples/01_registers` | Manipulação de registos |
-| `examples/02_memory` | Acesso e manipulação de memória |
-| `examples/03_instruction_cycle` | Simulador simples do ciclo de instrução |
-| `examples/04_stack` | Operações de stack (push/pop) |
-| `Makefile` | Compilação fácil de todos os exemplos |
+| `examples/02_memory` | Acesso e manipulação da memória |
+| `examples/03_instruction_cycle` | Similador basico do ciclo de instrução |
+| `examples/04_stack` | Ops. de stack (push/pop) |
+| `Makefile` | Compilação dos exemplos |
 
 ## Requisitos
 
