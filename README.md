@@ -1,39 +1,36 @@
 # Hardware Behavior
 
-Demonstração prática do funcionamento ao nível do hardware: ciclos de instrução, registos e manipulação de memória.
+Demonstração prática do funcionamento ao nível do hardware: **ciclos de instrução**, **registos** e **manipulação de memória**.
 
-## Objetivos
+Este repositório tem como objetivo mostrar, de forma clara e prática, como o processador executa instruções, como utiliza os registos e como acede à memória.
 
-- Compreender o **ciclo de instrução** (Fetch → Decode → Execute)
-- Manipular **registos** de uso geral e especiais
-- Realizar operações diretas de **leitura/escrita em memória**
-- Observar o comportamento real da stack e dos ponteiros
+## Objetivos de Aprendizagem
 
-## Estrutura
+- Compreender o ciclo **Fetch → Decode → Execute**
+- Manipular registos de uso geral e especiais (RAX, RBX, RCX, RDX, RSI, RDI, RSP, RBP, etc.)
+- Realizar operações de **load/store** em memória
+- Observar o comportamento da **stack**
+- Relacionar código de alto nível com o que acontece realmente no hardware
 
-| Pasta | Conteúdo |
-|-------|----------|
+## Estrutura do Repositório
+
+| Pasta / Ficheiro | Conteúdo |
+|------------------|----------|
 | `docs/` | Explicações teóricas detalhadas |
 | `examples/01_registers` | Manipulação de registos |
 | `examples/02_memory` | Acesso e manipulação de memória |
-| `examples/03_instruction_cycle` | Simulador do ciclo de instrução |
-| `examples/04_stack` | Operações de stack |
+| `examples/03_instruction_cycle` | Simulador simples do ciclo de instrução |
+| `examples/04_stack` | Operações de stack (push/pop) |
+| `Makefile` | Compilação fácil de todos os exemplos |
 
 ## Requisitos
 
-- `nasm` + `ld` (ou `gcc`) para Assembly x86-64
+- `nasm` e `ld` (ou `gcc`) para Assembly x86-64
 - `gcc` para os exemplos em C
 - Python 3 (apenas para o simulador)
 
-## Como compilar e executar
+### Instalação rápida (Ubuntu/Debian)
 
 ```bash
-# Exemplo Assembly
-cd examples/01_registers
-nasm -f elf64 registers.s -o registers.o
-ld registers.o -o registers
-./registers
-
-# Exemplo C
-gcc -o registers registers.c
-./registers
+sudo apt update
+sudo apt install nasm build-essential python3
