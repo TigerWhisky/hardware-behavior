@@ -1,0 +1,23 @@
+
+---
+
+### 2. `.gitignore`
+
+```gitignore
+# Binários
+*.o
+*.out
+registers
+registers_c
+memory_access
+memory_access_c
+stack_operations
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+*.swp
+*~
