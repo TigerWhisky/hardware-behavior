@@ -1,0 +1,12 @@
+# Compilar todos os exemplos Assembly e C
+make
+
+# Executar individualmente
+./examples/01_registers/registers
+./examples/01_registers/registers_c
+./examples/02_memory/memory_access
+./examples/02_memory/memory_access_c
+./examples/04_stack/stack_operations
+
+# Simulador do ciclo de instrução
+python3 examples/03_instruction_cycle/simple_cpu_sim.py
